@@ -49,7 +49,6 @@
 		D927F9E4288B8729007A2753 = {
 			isa = PBXGroup;
 			children = (
-				D927F9FE288B8773007A2753 /* EmojiSet.swift */,
 				D927F9EF288B8729007A2753 /* Emoji Party */,
 				D927F9EE288B8729007A2753 /* Products */,
 			);
@@ -66,6 +65,7 @@
 		D927F9EF288B8729007A2753 /* Emoji Party */ = {
 			isa = PBXGroup;
 			children = (
+				D927F9FE288B8773007A2753 /* EmojiSet.swift */,
 				D927F9F0288B8729007A2753 /* Emoji_PartyApp.swift */,
 				D927F9F2288B8729007A2753 /* ContentView.swift */,
 				5186799E288B95F30099E12B /* EmojiBouncyView.swift */,
