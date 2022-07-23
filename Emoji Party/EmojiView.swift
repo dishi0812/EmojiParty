@@ -37,6 +37,6 @@ struct EmojiView: View {
 struct EmojiView_Previews: PreviewProvider {
     static var previews: some View {
         EmojiView(emojiSet: EmojiSet(name: "Fruits",
-        emojis: ["🍌", "🍎", "🍓", "🍉", "🍍", "🥑"]))
+        emojis: ["🐔","🐮","🐿","🗺","🦊","🥾","👧","🎒"]))
     }
 }
