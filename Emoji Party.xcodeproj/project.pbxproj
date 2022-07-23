@@ -11,6 +11,8 @@
 		5186799F288B95F30099E12B /* EmojiBouncyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5186799E288B95F30099E12B /* EmojiBouncyView.swift */; };
 		518679A1288B987D0099E12B /* CollisionSurface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518679A0288B987D0099E12B /* CollisionSurface.swift */; };
 		A9C70681288B9AA7001D2C10 /* BouncyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C70680288B9AA7001D2C10 /* BouncyView.swift */; };
+		A9C70683288B9EC4001D2C10 /* banana.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A9C70682288B9EC4001D2C10 /* banana.mp3 */; };
+		A9C70686288B9EF3001D2C10 /* Subsonic in Frameworks */ = {isa = PBXBuildFile; productRef = A9C70685288B9EF3001D2C10 /* Subsonic */; };
 		D927F9F1288B8729007A2753 /* Emoji_PartyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D927F9F0288B8729007A2753 /* Emoji_PartyApp.swift */; };
 		D927F9F3288B8729007A2753 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D927F9F2288B8729007A2753 /* ContentView.swift */; };
 		D927F9F5288B872B007A2753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D927F9F4288B872B007A2753 /* Assets.xcassets */; };
@@ -23,6 +25,7 @@
 		5186799E288B95F30099E12B /* EmojiBouncyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiBouncyView.swift; sourceTree = "<group>"; };
 		518679A0288B987D0099E12B /* CollisionSurface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionSurface.swift; sourceTree = "<group>"; };
 		A9C70680288B9AA7001D2C10 /* BouncyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouncyView.swift; sourceTree = "<group>"; };
+		A9C70682288B9EC4001D2C10 /* banana.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = banana.mp3; sourceTree = "<group>"; };
 		D927F9ED288B8729007A2753 /* Emoji Party.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emoji Party.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D927F9F0288B8729007A2753 /* Emoji_PartyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji_PartyApp.swift; sourceTree = "<group>"; };
 		D927F9F2288B8729007A2753 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9C70686288B9EF3001D2C10 /* Subsonic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +72,7 @@
 				518679A0288B987D0099E12B /* CollisionSurface.swift */,
 				5186799A288B92A80099E12B /* EmojiView.swift */,
 				A9C70680288B9AA7001D2C10 /* BouncyView.swift */,
+				A9C70682288B9EC4001D2C10 /* banana.mp3 */,
 				D927F9F4288B872B007A2753 /* Assets.xcassets */,
 				D927F9F6288B872B007A2753 /* Preview Content */,
 			);
@@ -98,6 +103,9 @@
 			dependencies = (
 			);
 			name = "Emoji Party";
+			packageProductDependencies = (
+				A9C70685288B9EF3001D2C10 /* Subsonic */,
+			);
 			productName = "Emoji Party";
 			productReference = D927F9ED288B8729007A2753 /* Emoji Party.app */;
 			productType = "com.apple.product-type.application";
@@ -126,6 +134,9 @@
 				Base,
 			);
 			mainGroup = D927F9E4288B8729007A2753;
+			packageReferences = (
+				A9C70684288B9EF3001D2C10 /* XCRemoteSwiftPackageReference "subsonic" */,
+			);
 			productRefGroup = D927F9EE288B8729007A2753 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -142,6 +153,7 @@
 			files = (
 				D927F9F8288B872B007A2753 /* Preview Assets.xcassets in Resources */,
 				D927F9F5288B872B007A2753 /* Assets.xcassets in Resources */,
+				A9C70683288B9EC4001D2C10 /* banana.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +369,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A9C70684288B9EF3001D2C10 /* XCRemoteSwiftPackageReference "subsonic" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/subsonic";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A9C70685288B9EF3001D2C10 /* Subsonic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9C70684288B9EF3001D2C10 /* XCRemoteSwiftPackageReference "subsonic" */;
+			productName = Subsonic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D927F9E5288B8729007A2753 /* Project object */;
 }

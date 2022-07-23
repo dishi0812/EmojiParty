@@ -1,3 +1,4 @@
+import Subsonic
 import SwiftUI
 
 struct EmojiView: View {
@@ -23,8 +24,10 @@ struct EmojiView: View {
                 switch surface {
                 case .emoji:
                     print("L(oser)")
+                    play(sound: "banana.mp3")
                 case .wall:
                     print("W(all)")
+                    play(sound: "banana.mp3")
                 }
             }
         }
