@@ -11,6 +11,7 @@
 		D927F9F3288B8729007A2753 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D927F9F2288B8729007A2753 /* ContentView.swift */; };
 		D927F9F5288B872B007A2753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D927F9F4288B872B007A2753 /* Assets.xcassets */; };
 		D927F9F8288B872B007A2753 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D927F9F7288B872B007A2753 /* Preview Assets.xcassets */; };
+		D927F9FF288B8773007A2753 /* EmojiSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D927F9FE288B8773007A2753 /* EmojiSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		D927F9F2288B8729007A2753 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D927F9F4288B872B007A2753 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D927F9F7288B872B007A2753 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D927F9FE288B8773007A2753 /* EmojiSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiSet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 		D927F9E4288B8729007A2753 = {
 			isa = PBXGroup;
 			children = (
+				D927F9FE288B8773007A2753 /* EmojiSet.swift */,
 				D927F9EF288B8729007A2753 /* Emoji Party */,
 				D927F9EE288B8729007A2753 /* Products */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D927F9FF288B8773007A2753 /* EmojiSet.swift in Sources */,
 				D927F9F3288B8729007A2753 /* ContentView.swift in Sources */,
 				D927F9F1288B8729007A2753 /* Emoji_PartyApp.swift in Sources */,
 			);

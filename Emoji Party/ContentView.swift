@@ -8,10 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var emojiSets = [
+        EmojiSet(name: "Fruits", emojis: ["🍌","🍎", "🍉"]),
+        EmojiSet(name: "Candy", emojis: ["🍫", "🍬", "🍭"])
+    ]
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-    }
+        NavigationView{
+            List(emojiSets) { emojiSet in
+                VStack(alignment:.leading){
+                    Text(emojiSet.name)
+                        .font(.headline)
+                    Text(emojiSet.emojis.joined())
+                }
+            }
+            .navigationTitle("Emoji Party 🎉")
+
+            
+        }
+            }
 }
 
 struct ContentView_Previews: PreviewProvider {
