@@ -15,6 +15,14 @@ struct EmojiView: View {
                     }
                 }
             }
+            BouncyView(emojis: selectedEmojis) { surface in
+                switch surface {
+                case .emoji:
+                    print("L(oser)")
+                case .wall:
+                    print("W(all)")
+                }
+            }
         }
     }
 }
