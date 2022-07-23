@@ -12,6 +12,10 @@ struct EmojiView: View {
                         selectedEmojis.append(emoji)
                     } label: {
                         Text(emoji)
+                            .padding()
+                            .font(.largeTitle)
+                            .background(.gray)
+                            .cornerRadius(15)
                     }
                 }
             }
