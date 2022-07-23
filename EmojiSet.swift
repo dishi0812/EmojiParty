@@ -7,7 +7,7 @@
 
 import Foundation
 
-// emoji set 
+// emoji set duh
 struct EmojiSet: Identifiable{
     var id = UUID()
     var name: String
